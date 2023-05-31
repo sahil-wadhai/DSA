@@ -3,7 +3,7 @@
 
 - [📂 Questions](https://github.com/sahil-wadhai/DSA/tree/master/Questions)
 
-- ✍️ [Solutions](https://github.com/sahil-wadhai/DSA/tree/master/Solutions/arrays) (Solutions can be found on LeetCode itself)
+- ✍️ [Solutions](https://github.com/sahil-wadhai/DSA/tree/master/Solutions) (Solutions can be found on LeetCode itself)
 
 - [Connect with me](https://www.linkedin.com/in/sahil-wadhai-7b2210230/)
 
