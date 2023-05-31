@@ -1,7 +1,7 @@
 
 # ✨ DSA for Placement Preparation ✨
 
-- [📂 Questions](https://github.com/sahil-wadhai/DSA/tree/main/Questions)
+- [📂 Questions](https://github.com/sahil-wadhai/DSA/tree/master/Questions)
 
 - ✍️ [Solutions](https://github.com/sahil-wadhai/DSA/tree/master/Solutions/arrays) (Solutions can be found on LeetCode itself)
 
