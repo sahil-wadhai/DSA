@@ -4,22 +4,7 @@ import java.util.Arrays;
     Find in infinite sorted array
 */
 public class FindInInfy {
-    public static void main(String[] args) 
-    {
-        int [] infinite_arr = new int[200];
-        for (int i = 0 , j=0 ; j < infinite_arr.length ; i+=2,j++)
-        {
-            infinite_arr[j] = i;
-        }
-        System.out.println(Arrays.toString(infinite_arr));
-
-        int target = 100;
-        System.out.println("Target : " + ""+target);
-
-        int pos = findPos(infinite_arr,target);
-        System.out.println("Possition of \'" + target + "\'" + " = " + pos);
-    }
-
+    
     static int findPos(int [] arr,int target)
     {
         int s = 0,e = 1;
@@ -35,7 +20,7 @@ public class FindInInfy {
             {
                 int temp = e;
                 /*
-                doubling the search area { (e-s+1) } 
+                doubling the search area { (e-s+1) } ,
                 represents no. of elements in previous area
                 */
                 e = e + (e-s+1)*2; 
@@ -56,5 +41,20 @@ public class FindInInfy {
             }
         }
         return pos;
+    }
+    public static void main(String[] args) 
+    {
+        int [] infinite_arr = new int[200];
+        for (int i = 0 , j=0 ; j < infinite_arr.length ; i+=2,j++)
+        {
+            infinite_arr[j] = i;
+        }
+        System.out.println(Arrays.toString(infinite_arr));
+
+        int target = 100;
+        System.out.println("Target : " + ""+target);
+
+        int pos = findPos(infinite_arr,target);
+        System.out.println("Possition of \'" + target + "\'" + " = " + pos);
     }
 }

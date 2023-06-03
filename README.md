@@ -21,7 +21,7 @@
 ## Syllabus
 
 - [Arrays]() ( sorting, two-pointer, slidding window, 2D-arrays, Maths )
-- [Maths]( bit-manipulation, number theory ) 
+- [Maths]() (  bit-manipulation, number theory )
 - [Binary Search]() 
 - [Recursion]() 
 - [Linked List]() 
