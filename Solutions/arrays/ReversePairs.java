@@ -38,7 +38,7 @@ public class ReversePairs
         mergeSort(nums,mid+1,end,count);
 
         count(nums,start,mid,end,count);
-        merge(nums,start,mid,end,count);
+        merge(nums,start,mid,end);
     }
 
     private static void count(int[]nums , int start , int mid , int end , int [] count)
@@ -50,7 +50,8 @@ public class ReversePairs
         {
             if((long)nums[i] > (long)2*nums[j]) // nums[i] > 2*nums[j]
             {   
-                count[0] += mid-i+1;
+                //if val at ith index is greater it means all values from i will be greater
+                count[0] += mid-i+1;//all elements from i in the left array
                 j++;
             }
             else
@@ -59,7 +60,7 @@ public class ReversePairs
             }
         }
     } 
-    private static void merge(int[]nums , int start , int mid , int end , int [] count)
+    private static void merge(int[]nums , int start , int mid , int end)
     {
         int left = start;
         int right = mid+1;
