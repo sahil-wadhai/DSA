@@ -13,7 +13,7 @@ class MergeSortedArrays
         int n = intervals.length;
         ArrayList<ArrayList<Integer>> merged = new ArrayList<>();
 
-        Arrays.sort(intervals,(a,b) -> a[0] - b[0]); //takes O(nlogn)
+        Arrays.sort(intervals, (a,b) -> a[0] - b[0]); //takes O(nlogn)
         
         merged.add( new ArrayList<>());
         merged.get(0).add(intervals[0][0]) ;
@@ -72,3 +72,28 @@ class MergeSortedArrays
 
     }
 }
+
+/* Arrays.sort(intervals, (a,b) -> a[0] - b[0])
+
+    1. `Arrays.sort`: This is a Java method used to sort arrays.
+
+    2. `intervals`: This is the array that you want to sort.
+
+    3. `(a, b) -> a[0] - b[0]`: This is a lambda expression (an anonymous function) 
+    that defines how the elements in the `intervals` array should be compared for sorting. 
+    
+    In this lambda expression:
+    - `(a, b)` are two elements (intervals) from the `intervals` array that are being compared.
+    - `a[0]` represents the first element of the first interval `a`.
+    - `b[0]` represents the first element of the second interval `b`.
+    - `a[0] - b[0]` subtracts the first elements of `a` and `b`. The result determines the sorting order.
+
+    - If `a[0]` is less than `b[0]`, the result is negative, indicating that `a` should come before `b` in the sorted array.
+    - If `a[0]` is greater than `b[0]`, the result is positive, indicating that `b` should come before `a` in the sorted array.
+    - If `a[0]` is equal to `b[0]`, the result is zero, indicating that `a` and `b` have the same order in the sorted array.
+
+    So, this code will sort the `intervals` array based on the first element of each interval in ascending order. 
+    After the sorting is complete, the `intervals` array will be rearranged 
+    such that intervals with smaller first elements come first, 
+    and intervals with larger first elements come later in the array.
+*/

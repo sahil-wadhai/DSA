@@ -12,7 +12,7 @@
     Rotated Binary Search
 */
 import java.util.Arrays;
-public class BinarySearch {
+public class BinarySearchRec {
   static int binarySearch(int [] arr,int target,int start,int end)
   {
     if(start>end)

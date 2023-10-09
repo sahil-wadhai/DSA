@@ -23,7 +23,7 @@ class SortColors
             note :
             s points the end of 0's
             m points the end of 1's
-            e points the end of 2's
+            e points the start of 2's
         */
         while(m<=e)
         {

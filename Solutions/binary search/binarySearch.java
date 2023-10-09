@@ -1,5 +1,5 @@
 //import java.util.*;
-public class binarySearch {
+public class BinarySearch {
 
     static int search(int[]arr,int target)
     {

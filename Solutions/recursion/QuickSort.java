@@ -45,6 +45,8 @@ public class QuickSort {
                 end--;
             }
         }
+        //at the end of loop, pivot is placed at correct position
+        
         sort(arr,low,end); // sort left side of the pivot..
         sort(arr,start,high); //sort right side of the pivot..
     }

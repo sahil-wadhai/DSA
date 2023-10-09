@@ -7,11 +7,11 @@ class MajorityElement1
         Brute Force : <=(solved)
         - using map
 
-        optimized : 
-        - Moore voting algorithm
+        optimized : <=(solved)
+        - Moore voting algorithm , majority element should must exist , otherwise algo not works
     */
     
-    private static int majorityElement(int[] nums) //moore algorithm ( majority element should must exist , otherwise algo not works)
+    private static int majorityElement(int[] nums) //moore algorithm
     {
         int n = nums.length;
         int ele = 0;

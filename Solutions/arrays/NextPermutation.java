@@ -8,7 +8,7 @@ public class NextPermutation{
           - generate all possible permutation
           - return permutation just occuring after given.
 
-          optimized : 
+          optimized : <=(solved)
           - find pivot : first increasing pair from "right" , arr[i]<arr[i+1] ,here i is pivot
           - traverse from right find first index having num greater than arr[pivot]
           - swap values of pivot-index and just-greater index.

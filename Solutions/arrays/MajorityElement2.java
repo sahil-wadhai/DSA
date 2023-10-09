@@ -7,6 +7,10 @@ class MajorityElement2
 
         optimized : 
         - Moore voting algorithm - extension
+        - only two elements can occur more than n/3 times
+        - Find two elements which are occuring comparitively more than others using moore voting algo extension
+        - Calculate count of the elements
+        - elements count > n/3 are the requirred elements
     */
     
     private static List<Integer> majorityElement(int[] nums) //moore algorithm extension

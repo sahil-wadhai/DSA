@@ -10,7 +10,7 @@ public class ReversePairs
         - Compare each ith element with every jth element , where i<j
         - If arr[i] > 2*arr[j] increase count by 1 
 
-        optimized : 
+        optimized : <=(solved)
         - Apply merge sort on array
         - Before merging process , count reverse pairs . Then merge
         - See working of code using debugger to understand the algorithm.

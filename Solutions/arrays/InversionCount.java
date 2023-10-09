@@ -79,7 +79,7 @@ class InversionCount
 
                 //Here , every element from i to mid is greater than j
                 //so jth element form inversions with all elements from i to mid
-                count[0]+= mid-i+1;
+                count[0] += mid-i+1;
             }
             k++;
         }
@@ -105,7 +105,7 @@ class InversionCount
 
     public static void main(String[] args) {
 
-        long [] arr= {2,4,1,3,5};  
+        long [] arr= {4,2,1,3,5};  
 
         
         System.out.println();

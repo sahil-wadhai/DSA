@@ -5,7 +5,7 @@ class MergeSortedArrays{
     /*
         Brute Force : Combine both array and then apply sort function
         optimized : use two pointers (preffered when new merged array is needed) <=(solved)
-        best : use gap algorithm (preffered when previous arrays needed to be sorted according to sequence)
+        best : use gap algorithm (preffered when previous arrays needed to be sorted according to sequence) <=(solved)
     */
 
     //new merged array
@@ -49,10 +49,59 @@ class MergeSortedArrays{
         return merged;
     }
 
-    //sort without extraspace
+    //sort without extraspace : gap algorithm
     static void gapAlgo(int[] A , int[] B) 
     {
+        int n1 = A.length;
+        int n2 = B.length;
+        int n = n1 + n2;
+        int gap = (int)Math.ceil((float)n/2);
 
+        while(gap>1)
+        {
+            for(int i = 0; i<=n-gap ; i++)
+            {
+                int j = i+gap-1;
+
+                int secondi = -1;
+                int secondj = -1;
+
+                if(i>=n1) secondi = i-n1;
+                if(j>=n1) secondj = j-n1;
+
+                if(secondi<0 && secondj<0)
+                {
+                    if(A[i]>A[j])
+                    {
+                        int temp = A[i];
+                        A[i] = A[j];
+                        A[j] = temp;
+                    }   
+                }
+                else
+                {
+                    if(secondi>=0)
+                    {
+                        if(B[secondi]>B[secondj])
+                        {
+                            int temp = B[secondi];
+                            B[secondi] = B[secondj];
+                            B[secondj] = temp;
+                        }
+                    }
+                    else if(secondi<0 && secondj>=0)
+                    {
+                        if(A[i]>B[secondj])
+                        {
+                            int temp = A[i];
+                            A[i] = B[secondj];
+                            B[secondj] = temp;
+                        }
+                    }
+                }
+            }
+            gap--;
+        }
         return;
     }
     
@@ -62,14 +111,15 @@ class MergeSortedArrays{
         int [] arr1= { 1, 4, 7, 8, 10 };
         int [] arr2 = {2,3,9};
 
-        int [] ans = mergeSorted(arr1,arr2);
+        //merge with extra space
+        //int [] ans = mergeSorted(arr1,arr2);
 
         // To merge without extra space..
         gapAlgo(arr1,arr2); //..existing arrays are converted
 
         System.out.println();
         System.out.println("Input: arrays= "+ Arrays.toString(arr1) +" "+Arrays.toString(arr2));
-        System.out.println("Output: "+ Arrays.toString(ans));
+        // System.out.println("Output: "+ Arrays.toString(ans));
 
         System.out.println("\n Using Gap algorithm");
         System.out.println("Output :\nA = "+ Arrays.toString(arr1) +"\nB = "+Arrays.toString(arr2));

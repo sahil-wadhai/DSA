@@ -1,6 +1,6 @@
 //reference: https://takeuforward.org/data-structure/grid-unique-paths-dp-on-grids-dp8/
 
-class GridUniquePaths
+class GridUniquePaths2
 {
     /*
         brute-force : Recursion <=(solved)
