@@ -1,0 +1,4 @@
+Student [] arrObj = new Student[5];
+
+-> Above Statement does not create 5 objects of students
+-> It just creates a array which can store object references of 5 student object;

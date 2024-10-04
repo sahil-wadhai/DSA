@@ -1,0 +1,20 @@
+->
+Default:
+1) When no access modifier is specified for a class, method, or data member
+2) default data members, classes, or methods are only accessible with in same package.
+
+->
+Private: (specified using 'private' keyword)
+1) The methods or data members declared as private are accessible only within the class 
+in which they are declared.
+2) Top-level classes or interfaces can not be declared as private
+
+->
+Protected: (specified using 'protected' keyword)
+1) The methods or data members declared as protected are accessible within the same package 
+or subclasses in different packages.
+
+->
+Public: (specified using public keyword)
+1) Classes, methods, or data members that are declared as public are accessible from everywhere in the program. 
+

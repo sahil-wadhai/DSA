@@ -1,0 +1,16 @@
+
+note: N means Number of any datatype i.e int,float,double,long 
+-> Math.max(N, N); return N
+-> Math.min(N,N); return N
+-> Math.sqrt( double ); returns double
+-> Math.pow( double,double ); returns double
+-> Math.ceil( double ); returns double
+-> Math.floor( double ); returns double
+-> Math.round( double ); returns double
+-> Math.abs( N ); returns long or int
+-> Math.log( double ); returns double
+-> Math.log10( double ); returns double
+
+-> 
+Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive):
+(int)(Math.random() * 101);  // 0 to 100

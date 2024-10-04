@@ -1,0 +1,81 @@
+# https://www.geeksforgeeks.org/static-keyword-java/
+->
+The static keyword in Java is used to share the same variable or method of a given class. 
+The users can apply static keywords with variables, methods, blocks, and nested classes. 
+The static keyword belongs to the class rather than an instance of the class. 
+The static keyword is used for a constant variable or a method that is the same for every instance of a class.
+
+The static keyword is a non-access modifier in Java that is applicable for the following: 
+1) Blocks
+2) Variables
+3) Methods
+4) Classes (nested class only)
+
+->
+Characteristics of static keyword:
+Here are some characteristics of the static keyword in Java:
+
+1) Shared memory allocation: 
+Static variables and methods are allocated memory space only once during the execution of the program. 
+This memory space is shared among all instances of the class, which makes static members useful for maintaining global state or shared functionality.
+2) Accessible without object instantiation: 
+Static members can be accessed without the need to create an instance of the class. 
+ClassName.varName
+3) Associated with class, not objects: 
+Static members are associated with the class, not with individual objects. 
+This means that changes to a static member are reflected in all instances of the class.
+4) Cannot access non-static members: 
+Static methods and variables cannot access non-static members of a class, 
+as they are not associated with any particular instance of the class.
+5) static methods Can be overloaded, but not overridden: Static methods can be overloaded, which means that you can define multiple methods with the same name but 
+different parameters. However, they cannot be overridden, as they are associated with the class rather than with a particular instance of the class.
+
+-> 
+static blocks
+If you need to do the computation in order to initialize your static variables, 
+you can declare a static block that gets executed exactly once, when the class is first loaded. 
+example:
+
+class Test
+{
+    // static variable
+    static int a = 10;
+    static int b;
+    
+    // static block
+    static {
+        System.out.println("Static block initialized.");
+        b = a * 4;
+    }
+
+    public static void main(String[] args)
+    {
+       System.out.println("from main");
+       System.out.println("Value of a : "+a);
+       System.out.println("Value of b : "+b);
+    }
+}
+Output:
+Static block initialized.
+from main
+Value of a : 10
+Value of b : 40
+
+->
+static variable:
+can be created only at class level
+
+->
+static methods:
+-They can only directly call other static methods.
+-They can only directly access static data.
+-They cannot refer to this or super in any way.
+-Can be overloaded but not overiden
+-overhiding:
+If a derived class defines a static method with the same signature as a static method in the base class, 
+the method in the derived class is hidden by the method in the base class. 
+
+
+->
+static class:
+A class can be made static only if it is a nested class.

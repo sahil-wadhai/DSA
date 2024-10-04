@@ -1,0 +1,9 @@
+Quick Notes on data memory.
+ 
+Local Variable : Declared inside method.
+Instance Variable : Declared inside class.
+
+-> Every function has its own stack.
+-> Local variable is in this stack.
+-> Instance variable is in Heap.
+-> In case of objects at local scope, object reference is at stack but actual objects is in Heap.

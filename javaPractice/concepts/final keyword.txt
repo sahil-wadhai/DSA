@@ -1,0 +1,36 @@
+# https://www.javatpoint.com/final-keyword
+
+->
+Final can be:
+1) variable
+2) method
+3) class
+
+example :  
+final int speedlimit=90; //final variable  
+
+->
+final variable : value cannot br changed once initialized
+final int speedlimit; its a blank final variable
+blank final variable should be initialized in the constructor only
+
+->
+final method: If you make any method as final, you cannot override it.
+
+class Bike{  
+  final void run(){System.out.println("running");}  
+}  
+     
+class Honda extends Bike{  
+   void run(){System.out.println("running safely with 100kmph");}  //trying to override
+     
+   public static void main(String args[]){  
+   Honda honda= new Honda();  
+   honda.run();  
+   }  
+}  
+
+output : Compilation error
+
+->
+final class : If you make any class as final, you cannot extend it.

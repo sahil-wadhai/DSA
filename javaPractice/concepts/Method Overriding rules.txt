@@ -1,0 +1,79 @@
+# https://www.geeksforgeeks.org/overriding-in-java/
+
+1)
+Overriding and Access Modifiers
+The access modifier for an overriding method can allow more, but not less, access than the overridden method. 
+For example, a protected instance method in the superclass can be made public, but not private, in the subclass. 
+Doing so will generate a compile-time error. 
+
+2)
+Final methods can not be overridden
+
+3)
+Static methods can not be overridden(Method Overriding vs Method Hiding): 
+
+4)
+Private methods can not be overridden
+Private methods cannot be overridden as they are bonded during compile time. 
+Therefore we can’t even override private methods in a subclass.
+
+5)
+The overriding method must have the same return type (or subtype)
+class SuperClass {
+	public Object method()
+	{
+		System.out.println(
+			"This is the method in SuperClass");
+		return new Object();
+	}
+}
+
+class SubClass extends SuperClass {
+	public String method()
+	{
+		System.out.println(
+			"This is the method in SubClass");
+		return "Hello, World!";
+	}
+}
+
+public class Test {
+	public static void main(String[] args)
+	{
+		SuperClass obj1 = new SuperClass();
+		obj1.method();
+
+		SubClass obj2 = new SubClass();
+		obj2.method();
+	}
+}
+
+6)
+Invoking overridden method from sub-class
+We can call the parent class method in the overriding method using the super keyword. 
+
+class Parent {
+    void show() { System.out.println("Parent's show()"); }
+}
+ 
+// Inherited class
+class Child extends Parent {
+    // This method overrides show() of Parent
+    @Override void show()
+    {
+        super.show();
+        System.out.println("Child's show()");
+    }
+}
+
+-> overriding and exception handling
+1)
+If the super-class overridden method does not throw an exception, 
+the subclass overriding method can only throw the unchecked exception, 
+throwing a checked exception will lead to a compile-time error. 
+
+2)
+If the superclass overridden method does throw an exception, 
+the subclass overriding method can only throw the same, subclass exception. 
+Also, there is no issue if the subclass overridden method is not throwing any exception. 
+

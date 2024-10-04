@@ -1,0 +1,46 @@
+
+String pool
+
+-> 
+String name1 = "Sahil";
+String name2 = "Sahil";
+
+name1 and name2 are reference variable and "Sahil" is object of type string.
+as values are same both are pointing to same object
+so name1==name2 becomes true
+
+now,
+String name1 = "Sahil";
+String name2 = "Sahil";
+
+name2 = "Wadhai";
+
+initially they were pointing to same object but when name2 is changed to "Wadhai" new String object is created
+and name2 then points to that object.
+Even if name1 and name2 are pointing to same object changing name2 does not affect name1, 
+because String class objects are immutable.
+
+-> 
+when string object is initiated with
+String name1 = "Sahil";
+instead of 'new' keyword
+
+then string object is created in String pool which is in heap memory.
+
+but if
+String name2 = new String("Sahil");
+then string object is outside string pool but still inside heap
+
+so,
+String name1 = "Sahil";
+String name2 = new String("Sahil");
+name1==name2 becomes false
+use,
+name1.equals(name2)
+
+also,
+String name1 = new String("Sahil");
+String name2 = new String("Sahil");
+name1==name2 becomes false
+
+
