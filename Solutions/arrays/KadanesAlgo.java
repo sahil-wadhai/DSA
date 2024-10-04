@@ -8,6 +8,7 @@ class KadanesAlgo
         optimized : Run two for loops (traverse all subarrays and update max if sum > max ) <=(solved)
         best : Kadane's algorithm <=(solved)
     */
+    @SuppressWarnings("unused")
     private static int twoLoops(int [] nums)
     {
         int N = nums.length;

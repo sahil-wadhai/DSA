@@ -68,6 +68,7 @@ class MajorityElement2
         return ans;
     }
     
+    @SuppressWarnings("unused")
     private static List<Integer> bruteForce(int [] nums)
     {
         int n = nums.length;

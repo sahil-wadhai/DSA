@@ -53,7 +53,6 @@ class Eko
     }
     static long eko(long[]arr,long requiredWood)
     {
-        int n = arr.length;
         long low = 0;
         long high = 0;
         long ans = 0;

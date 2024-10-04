@@ -1,12 +1,12 @@
-//reference: https://www.geeksforgeeks.org/best-time-to-buy-and-sell-stock/
-
 import java.util.*;
-public class BuySellStock{
-    /*
+
+public class BuySellStock {
+     /*
         Brute Force :  Run two loops <=(solved)
         optimized : slidding window technique. <=(solved)
     */
 
+    @SuppressWarnings("unused")
     private static int bruteForce(int[] prices) 
     {
         int n = prices.length;
@@ -60,10 +60,10 @@ public class BuySellStock{
     }  
     
     public static void main(String[] args) {
-      int [] stockPrices = {7,1,5,3,6,4};
+        int [] stockPrices = {7,1,5,3,6,4};
 
-      System.out.println("Input : " + Arrays.toString(stockPrices));
-      int ans = maxProfit(stockPrices);
-      System.out.println("Output : " + ans); 
-  }
+        System.out.println("Input : " + Arrays.toString(stockPrices));
+        int ans = maxProfit(stockPrices);
+        System.out.println("Output : " + ans); 
+    }
 }

@@ -23,6 +23,7 @@ class MergeSortedArrays
 
         for(int i = 1 ; i< n ; i++)
         {
+            @SuppressWarnings("unused")
             int s = merged.get(k).get(0); //optional ...no need in the code
             int e = merged.get(k).get(1);
             // Here, s,e represent start,end of last interval of merged resp.

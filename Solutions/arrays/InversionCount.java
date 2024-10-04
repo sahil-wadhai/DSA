@@ -15,6 +15,7 @@ class InversionCount
         - See working of code using debugger to understand the algorithm.
     */
     
+    @SuppressWarnings("unused")
     private static long bruteForce(long [] arr)
     {
         int N = arr.length;

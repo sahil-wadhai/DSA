@@ -1,6 +1,5 @@
 //reference: https://takeuforward.org/data-structure/grid-unique-paths-dp-on-grids-dp8/
 
-import java.util.*;
 class GridUniquePaths
 {
     /*
@@ -56,6 +55,7 @@ class GridUniquePaths
   
     }
 
+    @SuppressWarnings("unused")
     private static int bruteForce(int i , int j ,int m , int n)
     {
         if(i==m-1 && j==n-1)

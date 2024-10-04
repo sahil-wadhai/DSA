@@ -36,6 +36,7 @@ class MajorityElement1
         return ele;
     }
     
+    @SuppressWarnings("unused")
     private static int bruteForce(int [] nums)
     {
         int n = nums.length;
