@@ -1,6 +1,6 @@
-//reference: https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/
-
 import java.util.*;
+
+//reference: https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/
 class MergeSortedArrays{
     /*
         Brute Force : Combine both array and then apply sort function

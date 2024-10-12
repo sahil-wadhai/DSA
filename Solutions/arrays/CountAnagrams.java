@@ -19,15 +19,7 @@ class CountAnagrams
         HashMap<Character,Integer> currMap = new HashMap<>();
         for(char ch : pattern)
         {
-            if(patMap.containsKey(ch))
-            {
-                int f = patMap.get(ch);
-                patMap.put(ch,f+1);
-            }
-            else
-            {
-                patMap.put(ch,1);
-            }
+            patMap.put(ch, patMap.getOrDefault(ch, 0)+1 );
         }
         
         
@@ -38,16 +30,7 @@ class CountAnagrams
         {
             char ch = str[j];
             
-            if(currMap.containsKey(ch))
-            {
-                int f = currMap.get(ch);
-                currMap.put(ch,f+1);
-            }
-            else
-            {
-                currMap.put(ch,1);
-            }
-            
+            currMap.put(ch, currMap.getOrDefault(ch, 0)+1);
             
             int wsize = j-i+1;
             if(wsize<k)

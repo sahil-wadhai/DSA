@@ -59,3 +59,5 @@ public class Gcd
     System.out.println("GCD : "+hcf);
   }
 }
+
+// Note : gcd( x, x+1 ) = 1
