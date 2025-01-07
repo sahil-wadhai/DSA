@@ -1,7 +1,4 @@
-package JavaPractice.concepts;
-
 import java.util.*;
-
 /* 
 
 # https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
@@ -13,7 +10,7 @@ import java.util.*;
     if method compare returns 1 : swaps
     if method compare returns -1 : no swap
 
-    Comparator c = new Comparator<Integer>{
+    Comparator c = new Comparator<Integer>(){
         @Override
         public int compare(Integer e1, Integer e2){
             if( e1>e2 ) return 1;
@@ -90,7 +87,7 @@ class ComparatorComparableDemo{
         });
         
         //Comparator Using lambda Expression
-        Collections.sort(emps, (Employee e1, Employee e2)->{
+        Collections.sort(emps, (e1, e2)->{
             if(e1.age>e2.age){
                 return 1; //swap
             }

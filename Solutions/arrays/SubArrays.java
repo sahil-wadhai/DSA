@@ -14,7 +14,9 @@ class SubArrays
                 // and ending points
                 for (int k=i; k<=j; k++)
                     System.out.print(arr[k]+" ");
+                System.out.println();
             }
+            
         }
     }
     //  Complexity- O(n^3) */ 

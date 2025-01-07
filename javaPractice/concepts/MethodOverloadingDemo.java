@@ -1,5 +1,3 @@
-package JavaPractice.concepts;
-
 // Different Ways of Method Overloading in Java
 //  - Changing the Number of Parameters.
 //  - Changing Data Types of the Arguments.

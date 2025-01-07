@@ -1,5 +1,3 @@
-package JavaPractice.concepts;
-
 import java.util.Arrays;
 
 /* String methods

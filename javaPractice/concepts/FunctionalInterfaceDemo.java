@@ -1,5 +1,3 @@
-package JavaPractice.concepts;
-
 /* 
  - Functional interface are the interface with only one function which is needed to be override
  - lambda expression represent instances of functional interfaces (interfaces with a single abstract method). 

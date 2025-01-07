@@ -1,4 +1,3 @@
-package JavaPractice.concepts;
 import java.time.LocalDate; // import the LocalDate class
 
 // 1 byte = 8 bits
