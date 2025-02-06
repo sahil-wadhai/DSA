@@ -1,12 +1,12 @@
 -> To declare an interface, use the interface keyword.
 -> All the methods in an interface are declared with an empty body and 
-are public 
+are public and abstract by default
 -> All variables are public, static, and final by default.
 example:
 
 interface Player
 {
-    final int id = 10;
+    int id = 10;
     int move();
 }
 

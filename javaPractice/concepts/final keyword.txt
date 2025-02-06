@@ -10,7 +10,7 @@ example :
 final int speedlimit=90; //final variable  
 
 ->
-final variable : value cannot br changed once initialized
+final variable : value cannot be changed once initialized
 final int speedlimit; its a blank final variable
 blank final variable should be initialized in the constructor only
 

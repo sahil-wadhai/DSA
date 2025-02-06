@@ -29,6 +29,7 @@ class SuperClass {
 }
 
 class SubClass extends SuperClass {
+	@Override
 	public String method()
 	{
 		System.out.println(
