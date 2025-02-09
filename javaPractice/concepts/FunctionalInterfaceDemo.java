@@ -52,16 +52,16 @@ public class FunctionalInterfaceDemo{
 Java SE 8 included four main kinds of functional interfaces 
 which can be applied in multiple situations as mentioned below:
 
-1) Consumer:
+1) Consumer<T>:
 Accepts only one argument or a gentrified argument and returns nothing
 Consumer<Integer> consumer = (value) -> System.out.println(value);
 
-2) Predicate:
+2) Predicate<T>:
 A function that accepts an argument and
 In return, generates a boolean value as an answer is known as a predicate.
 Predicate predicate = (value) -> value != null;
 
-3) Function :
+3) Function<T,R> :
 Takes argument and returns something.
 Function function = (s) -> s.length();
 
